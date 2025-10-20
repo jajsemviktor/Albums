@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kvíz: Uhádni album</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <label id = "pocet"></label>
+  <h1>Co je tohle za album?</h1>
+
+  <div>
+    <img id = "cover" alt = "Album Cover" style = "width: 300px; height: 300px;">
+  </div>
+
+  <div>
+    <label for = "albumName">Je to album:</label>
+    <input type = "text" id = "albumName" autocomplete = "off" placeholder = "Zadej název alba">
+    <button onclick = "checkAnswer()">To je vono</button>
+
+  </div>
+
+  <p id = "feedback"></p>
+
+  <script src="game.js"></script>
+
+  </body>  
+</html>
+  

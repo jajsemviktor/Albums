@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Výsledky kvízu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Tak a mas to za sebou</h1>
+  <p>Správně jsi uhádl <span id="score"></span> coverů.</p>
+  <button onclick="restartQuiz()">jeste jednou</button>
+
+  <script>
+  
+    document.getElementById('score').textContent = localStorage.getItem('quizScore');
+
+    function restartQuiz() {
+      localStorage.removeItem('quizScore');
+      window.location.href = 'index.html'; 
+    }
+  </script>
+</body>
+</html>
