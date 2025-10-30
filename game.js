@@ -129,17 +129,17 @@ function checkAnswer() {
     
     if (userAnswer === correctAnswer) {
         score++;
-        document.getElementById('feedback').textContent = 'Správně!';
+        document.getElementById('feedback').textContent = 'Right!';
         document.getElementById('feedback').style.color = 'green';
     } else {
-        document.getElementById('feedback').textContent = 'Špatně!.....Správná odpověď byla: ' + albums[currentQuestion].name;
+        document.getElementById('feedback').textContent = 'Wrong!....the correct answer was: ' + albums[currentQuestion].name;
         document.getElementById('feedback').style.color = 'red'
     }
 
     currentQuestion++;
     
     if (currentQuestion < albums.length) {
-        setTimeout(displayQuestion, 1000); 
+        setTimeout(displayQuestion, 2500); 
     } else {
         setTimeout(showResults, 1000); 
     }
