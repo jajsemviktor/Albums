@@ -8,6 +8,11 @@
 </head>
 <body>
 
+
+  <a href="index.html"><button>Do menu</button></a>
+
+  <br>
+  <br>
   <label id = "pocet"></label>
   <h1>Co je tohle za album?</h1>
 
@@ -19,13 +24,17 @@
     <label for = "albumName">Je to album:</label>
     <input type = "text" id = "albumName" autocomplete = "off" placeholder = "Zadej název alba">
     <button onclick = "checkAnswer()">To je vono</button>
+
+
+
+
     <script>
-document.getElementById('albumName').addEventListener('keydown', function(event) {
-    if (event.key === 'Enter') {
-        event.preventDefault(); // zabrání např. odeslání formuláře
-        checkAnswer();
-    }
-});
+        document.getElementById('albumName').addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+          event.preventDefault(); // zabrání např. odeslání formuláře
+          checkAnswer();
+        }
+          });
 </script>
 
 

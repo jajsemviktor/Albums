@@ -145,6 +145,8 @@ function checkAnswer() {
     }
 }
 
+
+
 function showResults() {
     localStorage.setItem('quizScore', score);  
     window.location.href = 'results.html';  
