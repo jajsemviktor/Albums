@@ -93,6 +93,9 @@ const albums = [
     },
 ];
 
+const artists = [
+
+]
 
 function shuffleArray(arr) {
     for (let i = arr.length - 1; i > 0; i--) {
@@ -100,7 +103,6 @@ function shuffleArray(arr) {
         [arr[i], arr[j]] = [arr[j], arr[i]]; 
     }
 }
-
 
 shuffleArray(albums);
 
@@ -110,16 +112,9 @@ let pocet = albums.length;
 
 function displayQuestion() {
     const question = albums[currentQuestion];
-    
-
     document.getElementById('cover').src = question.cover;
-    
-
     document.getElementById('albumName').value = '';
-    
- 
     document.getElementById('feedback').textContent = '';
-
     document.getElementById('pocet').textContent = `${currentQuestion + 1}/${pocet}`;
 }
 
@@ -145,11 +140,9 @@ function checkAnswer() {
     }
 }
 
-
-
 function showResults() {
     localStorage.setItem('quizScore', score);  
-    window.location.href = 'results.html';  
+    window.location.href = 'albums_results.html';  
 }
 
 
